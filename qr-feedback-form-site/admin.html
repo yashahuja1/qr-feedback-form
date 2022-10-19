@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+>
+<link rel="icon" href="plogo.png" type="image/icon type">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="styleadmin.css">
+<title>Admin Panel</title>
+</head>
+
+<body>
+        <div id="header">
+            <h1 class="admin">Admin Panel</h1>
+            <img src="bannerAdmin.jpg">
+            <!-- <p>Username</p>
+            <img src="https://w7.pngwing.com/pngs/384/706/png-transparent-computer-icons-user-login-gender-miscellaneous-desktop-wallpaper-account-thumbnail.png" width="26" height="26" alt="user icon"> -->
+        </div id="admin">
+        <div>
+            <h3 class="dashboard" id="welcome"></h3>
+            
+            <h3>Welcome,</h3>
+            <h3>The feedback or the response of the citizens will be recorded here. The recorded data will be shown in format of graph and pie-chart and the data will update itself as the number of response increases.</h3>
+            <div>
+                    <h2 id="responses">Feedbacks from Citizens / Visitors of Police Staion(s).</h2>
+                    <br>
+                    <br>                
+                    <center>
+                        <div id= "num"> 
+                            <iframe width="90%" height="118" seamless frameborder="0" scrolling="no"
+                            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS12vQ65WTToYuq5uwPDLT6hEiTOwWUaP_DqmvLlDQdTCxMlloLunKPGtKHYj1f3iaMmfsCcO4EJLF-/pubchart?oid=1469990558&amp;format=interactive"></iframe>
+                    </center>
+                </div>
+                    <center>This is the total number of feedbacks received so far.</center>
+                <br>
+                <br>
+                <hr>
+                <div id="pie">
+                     <iframe width="600px" height="400px" id="pie" seamless frameborder="0" scrolling="no"
+                     src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS12vQ65WTToYuq5uwPDLT6hEiTOwWUaP_DqmvLlDQdTCxMlloLunKPGtKHYj1f3iaMmfsCcO4EJLF-/pubchart?oid=1186041911&amp;format=interactive"></iframe>
+                    </div>
+               <center> This pie chart shows the different ways people used to reach the Police Station.</enter> 
+                <br>
+                </div>
+                <hr>
+                <div id="bar">
+                    <iframe width="600px" height="371" id="histogram" seamless frameborder="0" scrolling="no"
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS12vQ65WTToYuq5uwPDLT6hEiTOwWUaP_DqmvLlDQdTCxMlloLunKPGtKHYj1f3iaMmfsCcO4EJLF-/pubchart?oid=1082100665&amp;format=interactive"></iframe> 
+                </div>
+                <center>This bar graph shows the amount of time people waited to be heard in Police Station.</center>
+                <br><hr><br>
+            </div>
+            <div id="line">
+                    <iframe width="600px" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS12vQ65WTToYuq5uwPDLT6hEiTOwWUaP_DqmvLlDQdTCxMlloLunKPGtKHYj1f3iaMmfsCcO4EJLF-/pubchart?oid=1348669692&amp;format=interactive"></iframe>
+                </div>
+                <center>This chart shows the place people visited the Police Station.</center>
+            </div>
+            <br><hr><br>
+            <div id="tabl">
+                <!-- <iframe src="https://script.google.com/macros/s/AKfycbwPmqglesLeB7CgukDvb9YMeh3EGH23glyvGjbq56AmN5ShQeE/exec"></iframe> -->
+                
+                <!-- <button type="button" id="table" border-radius="20px"> 
+                    Search Table
+                </button> -->
+                <!-- <a id="table" href="https://script.google.com/macros/s/AKfycbwPmqglesLeB7CgukDvb9YMeh3EGH23glyvGjbq56AmN5ShQeE/exec">Search Table</a> -->
+                <iframe width="820px" height="371px" seamless frameborder="0" scrolling="no" src="https://script.google.com/macros/s/AKfycbwzqviI3hnQpvKcdGN9xgp_UWnw_OrAQTC86kGo/exec"></iframe>
+                <br>
+            </div>
+            <center>
+                This table shows the overall data inputs from users.
+                </center>
+            </div>
+</body>
+
+</html>

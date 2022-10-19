@@ -1,0 +1,129 @@
+body{
+    font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
+    background-color: bisque;
+    width: fit-content;
+
+}
+h2{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: darkblue;
+    background-color: #ffffff7c;
+}
+
+img{
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    border: 2px solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+p{
+    align-items: right;
+    text-align: right;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-right: 3%;
+}
+
+iframe{
+    display: flex;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+
+/* #header{
+    position: fixed;
+    text-align: center;
+    left: 0;
+    top: 0;
+    color: whitesmoke;
+    background: linear-gradient(darkblue, #ffffff);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    margin: 0 auto;
+    
+} */
+
+h3{
+    margin: 20px;
+    padding: 20px;
+}
+#admin{
+    color: black;
+    align-items:center;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+#welcome{
+    padding: 10px;
+}
+
+
+#responses{
+color: #000;
+font-size: 32px;
+display: flex;
+flex-wrap: nowrap;
+margin-bottom: 0;
+margin-left: 5%;
+width: auto;
+}
+
+#bar, #line{
+    position: relative;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+#tabl{
+    position: relative;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18%;
+}
+#table{
+    margin-left: 35%;
+    text-decoration: none;
+    padding: 5px;
+    border-style: solid;
+}
+
+#num{
+    text-align: center;
+    margin-left: 45%;
+}
+
+#pie {
+    position: relative;
+    display: flex;
+    margin-left: 15%;
+    /* transform: translate(5%, 0%) */
+}
+
+.dashboard{
+    position: relative;
+    margin-top: 69px;
+}
+.dash{
+    position: relative;
+    margin-top: 60px;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+      
+    <title>Feedback Form | Citizen</title>
+    <link rel="icon" href="plogo.png" type="image/icon type">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <header id="header">
+    <img id="header" src="bannerH.jpg" height="28%"  width="28%">
+  </header>
+  <br><br>
+  <center>
+  <h3 id="translate">Change Language:</h3>
+  <a id="english" href="form.html">English</a>
+  <a id="gujarati" href="gujarati_form.html">ગુજરાતી</a></center>
+  <center>
+    <p id="description" class="description" class="text-center"> <br> यह सर्वेक्षण प्रपत्र हमें पुलिस के व्यवहार और आम लोगों के अनुभव की समीक्षा करने और उसमें सुधार करने में मदद करेगा। 
+    </p></center> 
+    <br>
+    <br>
+    <div>
+        <form class="form" id="form" name="hindi" onsubmit="return clearForm()" method="post" action="https://script.google.com/macros/s/AKfycbwxmV91aQ0QTRQjZJnAKb0UAXnbBFn4AwuNB6nbr-Zj9C5GONs9ztAy4A7KDUPNWa6w/exec" id="survey-form" name="survey-form">
+                 
+                    <div class="labels" name="reach">
+                        1) आप थाने में कैसे आए? *
+                     </div>
+                     <label class="m-b-xs">
+                     <input type="radio" name="reach" value="Through a person known to a police officer" required/> एक पुलिस अधिकारी को जानने वाले व्यक्ति के माध्यम से 
+                     </label>
+                     <br>
+                     <label class="m-b-xs">
+                     <input type="radio" name="reach" value="With a neighbour/ local leader" required/> एक पड़ोसी/स्थानीय नेता के माध्यम से 
+                     </label>
+                     <br>
+                     <label class="m-b-xs">
+                     <input type="radio" name="reach" value="On your own" required/> स्वयं से 
+                     </label>
+                     <br>
+                     <br> 
+                     <br>
+                 
+                
+                 
+                    <div class="labels" name="duration">
+                        2) पुलिस स्टेशन में सुनवाई के लिए आपने कितना इंतजार किया? *
+                     </div>
+                     <label class="m-b-xs">
+                     <input type="radio" name="duration" value="Immediately"   /> तुरंत
+                     </label>
+                     <br>
+                     <label class="m-b-xs">
+                     <input type="radio" name="duration" value="5 minutes" /> 5 मिनट
+                     </label>
+                     <br>
+                     <label class="m-b-xs">
+                     <input type="radio" name="duration" value="10 minutes" /> 10 मिनट
+                     </label>
+                     <br>
+                     <label class="m-b-xs">
+                    <input type="radio" name="duration" value="15 minutes" /> 15 मिनट
+                    </label>
+                    <label class="m-b-xs">
+                    <br>
+                    <input type="radio" name="duration" value="More than 15 minutes" /> 15 मिनट से अधिक
+                    </label>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="form-group col-md-4">
+                      <label for="inputDistrict" style="color:whitesmoke"> 3) जिल्ला चुनिये :</label>
+                      <select class="form-control" id="inputDistrict" name="district" required>
+                                <option value="SelectDistrict">--- जिल्ला चुनिये ---</option>
+                                <option value="Ahmedabad">Ahmedabad</option>
+                                <option value="Amreli">Amreli</option>
+                                <option value="Anand">Anand</option>
+                                <option value="Banaskantha">Banaskantha</option>
+                                <option value="Bharuch">Bharuch</option>
+                                <option value="Bhavnagar">Bhavnagar</option>
+                                <option value="Dahod">Dahod</option>
+                                <option value="Gandhinagar">Gandhinagar</option>
+                                <option value="Gir Somnath">Gir Somnath</option>
+                                <option value="Jamnagar">Jamnagar</option>
+                                <option value="Junagadh">Junagadh</option>
+                                <option value="Kheda">Kheda</option>
+                                <option value="Kachchh">Kachchh</option>
+                                <option value="Mehsana">Mehsana</option>
+                                <option value="Narmada">Narmada</option>
+                                <option value="Navsari">Navsari</option>
+                                <option value="Patan">Patan</option>
+                                <option value="Porbandar">Porbandar</option>
+                                <option value="Rajkot">Rajkot</option>
+                                <option value="Sabarkantha">Sabarkantha</option>
+                                <option value="Surendranagar">Surendranagar</option>
+                                <option value="Surat">Surat</option>
+                                <option value="Tapi">Tapi</option>
+                                <option value="Vadodara">Vadodara</option>
+                                <option value="Valsad">Valsad</option>
+                              </select>
+                    </div> <br>
+                    <div class="form-group col-md-4">
+                      <label for="inputTaluka" style="color:whitesmoke">4) स्टेशन  :</label>
+                      <select class="form-control" id="inputTaluka" name="area" required>
+                        <option value="taluka.js">-- चुनिये -- </option>
+                        <option value="Adalaj">Adalaj</option>
+                        <option value="Amrapali">Amrapali</option>
+                        <option value="Amreli">Amreli</option>
+                        <option value="Ambaji">Ambaji</option>
+                        <option value="Bhuj">Bhuj</option>
+                        <option value="Bhavnagar">Bhavnagar</option>
+                        <option value="Charotar">Charotar</option>
+                        <option value="Chotila">Chotila</option>
+                        <option value="Dadra Nagar Haveli">Dadra Nagar Haveli</option>
+                        <option value="Dakor">Dakor</option>
+                        <option value="Dantiwada">Dantiwada</option>
+                        <option value="Diu">Diu</option>
+                        <option value="Daman">Daman</option>
+                        <option value="Dwarka">Dwarka</option>
+                        <option value="Deesa">Deesa</option>
+                        <option value="Gandhidham">Gandhidham</option>
+                        <option value="Gondal">Gondal</option>
+                        <option value="Girnar">Girnar</option>
+                        <option value="Himmatnagar">Himmatnagar</option>
+                        <option value="Junagadh">Junagadh</option>
+                        <option value="Junagadh">Jamnagar</option>
+                        <option value="Kandla">Kandla</option>
+                        <option value="Kathwada">Kathwada</option>
+                        <option value="Makarpura">Makarpura</option>
+                        <option value="Manjalpur">Manjalpur</option>
+                        <option value="Maneja">Maneja</option>
+                        <option value="Naroda">Naroda</option>
+                        <option value="Nikol">Nikol</option>
+                        <option value="Narol">Narol</option>
+                        <option value="Odhav">Odhav</option>
+                        <option value="Pavagadh">Pavagadh</option>
+                        <option value="Pandesara">Pandesara</option>
+                        <option value="Palanpur">Palanpur</option>
+                        <option value="Patan">Patan</option>
+                        <option value="Somnath">Somnath</option>
+                        <option value="Saputara">Saputara</option>
+                        <option value="Varachha">Varachha</option>
+                        <option value="Veraval">Veraval</option>
+                        <option value="Tarsali">Tarsali</option>
+                        <option value="Thaltej">Thaltej</option>
+                        <option value="Vadgam">Vadgam</option>
+                        <option value="Viratnagar">Viratnagar</option>
+                        <option value="Waghodia">Waghodia</option>
+
+                      </select>
+                    </div>
+                  
+                    <br>
+                 
+                    <label for="survey-form-suggestions">
+                        5) आप पुलिस थाने में पुलिस अधिकारियों के साथ अपने अनुभव का वर्णन कैसे करेंगे?
+                        <br><br>
+                    <textarea id="survey-form-suggestions" maxlength="300" placeholder="कृपया अपने सुझाव दें" name="experience" required></textarea></label>
+                    <br>
+                    <br>
+                    <br>
+                    <center><input type="reset" class="btn" value="Reset" />         
+        <input type="submit" class="btn" value="Submit" /></center>
+                 
+        </form>
+        <footer class="footer-bottom"> <p>गृह विभाग, गुजरात पुलिस</p> </footer>
+      </div>
+      <script>
+        function clearForm(){
+          document.form.getElementById('form').reset();
+          return true;
+        }
+      </script>  
+</body>
+</html>

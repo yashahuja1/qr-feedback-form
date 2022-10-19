@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<link rel="stylesheet" href="index.css">
+	<link rel="icon" href="plogo.png" type="image/icon type">
+<title>Login | QR Feedback</title>
+
+</head>
+<body>
+	<!-- <img  id="img" src="plogo.png"> -->
+	<div class="container">
+		<div id="banner">
+			<br>
+			<img id="logo" src="banner.jpg" height="28%"  width="28%">
+			<br><br>
+		</div>
+		
+		<div id="sender">
+			<br>
+				<p id="txt" name="mobile">Enter 10-digit Mobile Number :</p>
+				<input type="text" id="number" value="+91 " placeholder="Enter your 10-digit phone number" >
+				
+				
+				
+
+
+
+			<div id="recaptcha-container"></div>
+			<center>
+				<input type="button" class="send" value="SEND OTP" onClick="phoneAuth()">
+			</center>
+			<a href="login.html" id="admn">Are you an admin?</a>
+		</div>
+		<div id="verifier" style = "display: none">
+			<br><br>
+			<input type="text" id="verificationcode" placeholder="OTP Code">
+			<div class="custom-select" style="width:200px;">
+				<!-- <select>
+				  <option value="0">Select Language:</option>
+				  <option value="1">Engilsh</option>
+				  <option value="2">Gujarati</option>
+				  <option value="3">Hindi</option>
+				  
+				</select> -->
+			</div>
+			<input type="submit" id="verify" value="Login" onClick="codeverify()">
+			<div class="p-conf">
+				Number Verified Successfully !
+			</div>
+			<div class="n-conf">
+				Wrong OTP, Try again !!
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+<!--	add firebase SDK-->
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase.js"></script>
+<script>
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyC62kR5nxhbtVR4nikc7gMhFawU5hvJIDs",
+    authDomain: "qr-feedback-form.firebaseapp.com",
+    projectId: "qr-feedback-form",
+    storageBucket: "qr-feedback-form.appspot.com",
+    messagingSenderId: "570897041700",
+    appId: "1:570897041700:web:bff1b6b7b7353d3c274bb1"
+  };
+
+	firebase.initializeApp(firebaseConfig);
+render();
+function render(){
+	window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+	recaptchaVerifier.render();
+}
+	// function for send message
+function phoneAuth(){
+	var number = document.getElementById('number').value;
+	firebase.auth().signInWithPhoneNumber(number, window.recaptchaVerifier).then(function(confirmationResult){
+		window.confirmationResult = confirmationResult;
+		coderesult = confirmationResult;
+		document.getElementById('sender').style.display = 'none';
+		document.getElementById('verifier').style.display = 'block';
+	}).catch(function(error){
+		alert(error.message);
+	});
+}
+	// function for code verify
+function codeverify(){
+	var code = document.getElementById('verificationcode').value;
+	coderesult.confirm(code).then(function(){
+		document.getElementsByClassName('p-conf')[0].style.display = 'block';
+		document.getElementsByClassName('n-conf')[0].style.display = 'none';
+		setTimeout(location.replace("form.html"), 5000);
+	}).catch(function(){
+		document.getElementsByClassName('p-conf')[0].style.display = 'none';
+		document.getElementsByClassName('n-conf')[0].style.display = 'block';
+	})
+	
+	
+}
+</script>
+<!-- <script>
+		location.replace("form.html");
+</script> -->
+</body>
+</html>

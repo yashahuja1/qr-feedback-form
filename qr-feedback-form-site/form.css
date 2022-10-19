@@ -1,0 +1,122 @@
+body{
+    justify-content: center;
+    color: whitesmoke;
+    background-color: beige;    
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-size: 100% 100%;
+    background-size: cover;
+    font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
+}
+#header{
+    color: white;
+    backdrop-filter: blur(10px);
+    position: relative;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#translate{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hindi, #gujarati, #english{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    border-style: solid;
+    background-color: beige;
+    padding: 5px 4px 2px 4px;
+    border-radius: 22px;
+}
+
+.form{
+    color: whitesmoke;
+    text-align:  justify;
+    margin-left: 5px;
+}
+
+#survey-form-suggestions{
+    height: 40px;
+    width: 90%;
+    display: flex;
+    /* background-color: rgba(0, 0, 139, 0.32); */
+    padding-bottom:0px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+
+#description{
+    font-size: 10px;    
+}
+
+.labels{
+    padding-bottom: 10px;
+}
+
+#submit{
+    margin-bottom: 28vw;
+    border: 2px solid #192448;
+    border-radius:20px;
+    background-color: rgba(167, 167, 167, 0.215);
+    padding:8px 20px 8px 20px;
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+
+}
+.btn{
+    margin-bottom: 28vw;
+    /* border: 2px solid #192448; */
+    border-radius:20px;
+    background-color: rgba(167, 167, 167, 0.215);
+    padding:8px 20px 8px 20px;
+    color: whitesmoke;
+    backdrop-filter: blur(10px);
+    /* text-shadow: 3px 3px 3px darkblue; */
+    margin-bottom: 200px;
+}
+
+.btn:hover{
+    background: #00177c;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #00177c,
+                0 0 25px #00177c,
+                0 0 50px #00177c,
+                0 0 100px #00177c;
+}
+
+.footer-bottom{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    color: whitesmoke;
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+  }
